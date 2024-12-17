@@ -1,0 +1,5 @@
+SELECT 
+public.organization.name
+FROM public.user 
+INNER JOIN public.organization ON public.organization.id = public.user.organization_id
+WHERE public.user.name = {{appsmith.user.email}} 

@@ -1,0 +1,76 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 21,
+  "boxShadow": "none",
+  "buttonColor": "#b91c1c",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.7a418b9e1899a550d7e8f33b48cbde12.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": "{{!(Status_Query.data.isActive && Status_Query.data.activeSearches > 0 && Status_Query.data.pastSearches == '0')}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "8ubj0nln2q",
+  "leftColumn": 16,
+  "minWidth": 120,
+  "mobileBottomRow": 16,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 17,
+  "mobileTopRow": 12,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "onClick": "{{Reset_Bot.run().then(() => {\n  showAlert('Сервис перезапущен!', 'success');\n}).catch(() => {\n  showAlert('Не получилось', 'error');\n});}}",
+  "originalBottomRow": 21,
+  "originalTopRow": 17,
+  "parentColumnSpace": 16.234375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 26,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "text": "Перезагрузить ",
+  "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
+  "topRow": 17,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "se3aay55hn",
+  "widgetName": "Button3"
+}

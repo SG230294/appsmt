@@ -1,0 +1,131 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "additionalStaticProps": [
+    "level",
+    "levelData",
+    "prefixMetaWidgetId",
+    "metaWidgetId"
+  ],
+  "animateLoading": true,
+  "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
+  "borderRadius": "0px",
+  "bottomRow": 32,
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  "children": [
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 210,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dropDisabled": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "pyslf7ov2t",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 400,
+      "minWidth": 450,
+      "mobileBottomRow": 400,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 382.5,
+      "mobileTopRow": 0,
+      "needsErrorInfo": false,
+      "noPad": true,
+      "openParentPropertyPane": true,
+      "parentColumnSpace": 1,
+      "parentId": "l6cqb3a6cx",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 382.5,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "5funh36lqs",
+      "widgetName": "Canvas4"
+    }
+  ],
+  "currentItemsView": "{{[]}}",
+  "defaultSelectedItem": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "currentItemsView"
+    },
+    {
+      "key": "selectedItemView"
+    },
+    {
+      "key": "triggeredItemView"
+    },
+    {
+      "key": "primaryKeys"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "listData"
+    },
+    {
+      "key": "backgroundColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onItemClick"
+    }
+  ],
+  "enhancements": true,
+  "flexVerticalAlignment": "start",
+  "gridType": "vertical",
+  "hasMetaWidgets": true,
+  "isCanvas": true,
+  "isLoading": false,
+  "isVisible": true,
+  "itemBackgroundColor": "#FFFFFF",
+  "itemSpacing": "2",
+  "key": "emvjrchm31",
+  "leftColumn": 0,
+  "listData": "{{Select_exchange_accs.data}}",
+  "mainCanvasId": "5funh36lqs",
+  "mainContainerId": "9p5uw8l7hn",
+  "minWidth": 450,
+  "mobileBottomRow": 182,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 42,
+  "mobileTopRow": 142,
+  "needsErrorInfo": false,
+  "onItemClick": "{{MyJSObject.setcurrentExchangeAccount(Accounts.selectedItem);\nstoreValue('selectedItem', currentItem.id);\nSelect_public_search1.run()}}",
+  "originalBottomRow": 32,
+  "originalTopRow": 11,
+  "pageSize": 2,
+  "parentColumnSpace": 15.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "primaryKeys": "{{Accounts.listData.map((currentItem, currentIndex) => currentItem[\"id\"] )}}",
+  "renderMode": "CANVAS",
+  "requiresFlatWidgetChildren": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 15,
+  "selectedItemView": "{{{}}}",
+  "serverSidePagination": false,
+  "templateHeight": 160,
+  "topRow": 11,
+  "triggeredItemView": "{{{}}}",
+  "type": "LIST_WIDGET_V2",
+  "widgetId": "l6cqb3a6cx",
+  "widgetName": "Accounts"
+}

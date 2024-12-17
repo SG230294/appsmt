@@ -1,0 +1,4 @@
+{
+	"maxActiveReservations": "{{this.params.limit}}",
+	"updateFrequency": "{{this.params.updateFreq}}"
+}//

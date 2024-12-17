@@ -1,0 +1,9 @@
+SELECT 
+public.exchange_account.id,
+public.exchange_account.login,
+public.exchange_account.is_active
+/*public.user.name*/
+FROM public.exchange_account
+INNER JOIN public.user ON public.exchange_account.organization_id = public.user.organization_id
+WHERE public.user.name = {{appsmith.user.email}} 
+

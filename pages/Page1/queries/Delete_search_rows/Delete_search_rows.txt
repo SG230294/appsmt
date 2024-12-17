@@ -1,0 +1,1 @@
+DELETE FROM public.search WHERE id in ('{{Table1.selectedRows.map(t => t.id).join("', '")}}')

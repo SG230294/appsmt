@@ -1,0 +1,58 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "defaultSwitchState": "{{currentItem.is_active}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "defaultSwitchState"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultSwitchState"
+    },
+    {
+      "key": "onChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onChange"
+    }
+  ],
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "a28vnmjtlq",
+  "label": "активен",
+  "labelPosition": "Left",
+  "labelStyle": "BOLD",
+  "labelTextSize": "1rem",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 38,
+  "mobileRightColumn": 50,
+  "mobileTopRow": 2,
+  "needsErrorInfo": false,
+  "onChange": "{{MyJSObject.changeActiveness(currentItem.id, Switch2.isSwitchedOn)}}",
+  "parentColumnSpace": 5.5390625,
+  "parentId": "e9f2w8ep20",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 31,
+  "topRow": 4,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "ij6r64vh20",
+  "widgetName": "Switch2"
+}

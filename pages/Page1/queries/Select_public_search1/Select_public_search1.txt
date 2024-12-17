@@ -1,0 +1,12 @@
+SELECT
+  *
+FROM
+  public.search
+WHERE
+  "name" ilike '%{{Table1.searchText}}%' AND public.search.exchange_account_id = '{{MyJSObject.currentExchangeAccount.id}}'
+ORDER BY
+  "{{Table1.sortOrder.column || 'id'}}" {{Table1.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{Table1.pageSize}}
+OFFSET
+  {{Table1.pageOffset}}

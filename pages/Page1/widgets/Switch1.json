@@ -1,0 +1,76 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "bottomRow": 21,
+  "boxShadow": "none",
+  "defaultSwitchState": "{{Status_Query.data.isActive}}",
+  "displayName": "Switch",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "defaultSwitchState"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultSwitchState"
+    },
+    {
+      "key": "onChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.2d4319f7c985f3f078acf48f608eb8bf.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "q0tfcxzkuh",
+  "label": "Бот активен",
+  "labelPosition": "Left",
+  "leftColumn": 30,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 9,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 9,
+  "mobileTopRow": 5,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "onChange": "{{Switch1.isSwitchedOn ? Start_Bot.run() : Stop_Bot.run()}}",
+  "originalBottomRow": 21,
+  "originalTopRow": 17,
+  "parentColumnSpace": 16.234375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 40,
+  "searchTags": [
+    "boolean"
+  ],
+  "tags": [
+    "Toggles"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.cd04c6d6a11266a806cebe39829607cb.svg",
+  "topRow": 17,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "5ozutc51a9",
+  "widgetName": "Switch1"
+}
